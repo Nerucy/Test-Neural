@@ -29,3 +29,8 @@ model.fit(X, Y, epochs=200, batch_size=1)
 # 確認
 classes = model.predict_classes(X, batch_size=1)
 prob = model.predict_proba(X, batch_size=1)
+print('classified: ')
+print(Y == classes)
+print()
+print('output probability ')
+print(prob)
