@@ -31,7 +31,7 @@ b = tf.Variable(tf.zeros([K]))
 
 # モデル構築。yが出力。softmax関数
 # y = softmax(wt x + b)
-# placeholde: 定義の時は次元だけでいい None, 2 は2次元のが？個ということ
+# placeholder: 定義の時は次元だけでいい None, 2 は2次元のが？個ということ
 x = tf.placeholder(tf.float32, shape=[None, M])
 t = tf.placeholder(tf.float32, shape=[None, K]) # 正解値
 y = tf.nn.softmax(tf.matmul(x, w) + b)
